@@ -1,7 +1,7 @@
 import 'package:dex_task_flutter/cube/model/cube.dart';
 import 'package:dex_task_flutter/cube/interface/button_strategy.dart';
 
-/// В данной стратегии реализуется поведение кнопки "Вправо".
+/// В данной стратегии реализуется поведение кнопки Вправо
 class ButtonRight implements ButtonStrategy {
   @override
   void execute(Cube cube) {
