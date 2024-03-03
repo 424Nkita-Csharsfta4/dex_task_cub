@@ -1,8 +1,16 @@
-# Home Work
+# dex_task_flutter
 
-Написать приложение с кубиком и четырьмя кнопками. У кубика есть положения: 
-левое верхнее, центральное верхнее, правое верхнее,
-центральное левое, центральное, центральное правое,
-левое нижнее, центральное нижнее, правое нижнее.
+A new Flutter project.
 
-Кнопки нужны для того чтобы изменять положение кубика на экране.
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
