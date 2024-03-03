@@ -17,23 +17,28 @@ class MainViewModel extends ChangeNotifier {
     this.downButton,
   );
 
-  void moveLeft() {
-    leftButton.execute(cube);
-    notifyListeners();
-  }
+ /// Метод для перемещения куба влево
+ void moveLeft() {
+  leftButton.execute(cube);
+  notifyListeners();
+}
 
-  void moveRight() {
-    rightButton.execute(cube);
-    notifyListeners();
-  }
+/// Метод для перемещения куба вправо
+void moveRight() {
+  rightButton.execute(cube);
+  notifyListeners();
+}
 
-  void moveUp() {
-    upButton.execute(cube);
-    notifyListeners();
-  }
+/// Метод для перемещения куба вверх
+void moveUp() {
+  upButton.execute(cube);
+  notifyListeners();
+}
 
-  void moveDown() {
-    downButton.execute(cube);
-    notifyListeners();
-  }
+/// Метод для перемещения куба вниз
+void moveDown() {
+  downButton.execute(cube);
+  notifyListeners();
+}
+
 }
