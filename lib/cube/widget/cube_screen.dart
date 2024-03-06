@@ -25,16 +25,19 @@ class _CubeScreenState extends State<CubeScreen> {
             child: AnimatedAlign(
               duration: const Duration(milliseconds: 300),
               alignment: calculateAlignment(widget.viewModel.cube.position),
-              child: const SizedBox(
-                width: 100,
-                height: 100,
-                child: Center(
-                  child: SizedBox(
-                    width: 50,
-                    height: 50,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 4, 4, 4),
+              child: ListenableBuilder(
+                listenable: widget.viewModel,
+                builder: (context, child) => const SizedBox(
+                  width: 100,
+                  height: 100,
+                  child: Center(
+                    child: SizedBox(
+                      width: 50,
+                      height: 50,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 4, 4, 4),
+                        ),
                       ),
                     ),
                   ),
@@ -89,7 +92,6 @@ class _CubeScreenState extends State<CubeScreen> {
     );
   }
 
-  /// Метод для определения выравнивания на основе позиции куба
   Alignment calculateAlignment(CubePosition position) {
     switch (position) {
       case CubePosition.center:
